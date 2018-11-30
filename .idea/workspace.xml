@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85e6e532-7d56-4f1f-a8eb-2c97d3332c4a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/medium/BankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/sda/medium/BankAccountTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sda/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sda/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sda/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sda/entry/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/sda/CalculatorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/sda/entry/CalculatorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/sda/medium/BankAccountTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/sda/medium/BankAccountTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -66,8 +61,8 @@
       <file leaf-file-name="BankAccount.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/medium/BankAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state relative-caret-position="306">
+              <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="110" />
               <folding>
                 <element signature="e#109#110#0" expanded="true" />
                 <element signature="e#136#137#0" expanded="true" />
@@ -83,14 +78,12 @@
       <file leaf-file-name="BankAccountTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/pl/sda/medium/BankAccountTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+            <state relative-caret-position="143">
+              <caret line="22" column="37" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#160#161#0" expanded="true" />
                 <element signature="e#206#207#0" expanded="true" />
-                <element signature="e#322#323#0" expanded="true" />
-                <element signature="e#360#361#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -267,11 +260,6 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.BankAccountTests">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.sda.Application" />
-      <module name="TDD" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -289,6 +277,29 @@
       <option name="MAIN_CLASS_NAME" value="pl.sda.medium.BankAccountTests" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="BankAccountTests.shouldThrowExceptionWhenUserTriesToWithdrawMoreMoneyThanHeHas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.sda.medium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="pl.sda.medium" />
+      <option name="MAIN_CLASS_NAME" value="pl.sda.medium.BankAccountTests" />
+      <option name="METHOD_NAME" value="shouldThrowExceptionWhenUserTriesToWithdrawMoreMoneyThanHeHas" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -388,15 +399,16 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.Application" />
       <item itemvalue="JUnit.CalculatorTests.addingTwoNumbersShouldReturnExpectedResults" />
       <item itemvalue="JUnit.CalculatorTests" />
       <item itemvalue="JUnit.CalculatorTests.addingTwoNumbersShouldReturnExpectedResult" />
       <item itemvalue="JUnit.BankAccountTests" />
+      <item itemvalue="JUnit.BankAccountTests.shouldThrowExceptionWhenUserTriesToWithdrawMoreMoneyThanHeHas" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BankAccountTests" />
+        <item itemvalue="JUnit.BankAccountTests.shouldThrowExceptionWhenUserTriesToWithdrawMoreMoneyThanHeHas" />
         <item itemvalue="JUnit.CalculatorTests.addingTwoNumbersShouldReturnExpectedResult" />
         <item itemvalue="JUnit.CalculatorTests" />
         <item itemvalue="JUnit.CalculatorTests.addingTwoNumbersShouldReturnExpectedResults" />
@@ -419,15 +431,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CalculatorTests_addingTwoNumbersShouldReturnExpectedResults - 2018.11.29 at 20h 56m 04s.xml">
-      <configuration name="CalculatorTests.addingTwoNumbersShouldReturnExpectedResults" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CalculatorTests - 2018.11.29 at 20h 58m 28s.xml">
-      <configuration name="CalculatorTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CalculatorTests_addingTwoNumbersShouldReturnExpectedResult - 2018.11.29 at 23h 13m 35s.xml">
-      <configuration name="CalculatorTests.addingTwoNumbersShouldReturnExpectedResult" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CalculatorTests - 2018.11.30 at 18h 00m 27s.xml">
       <configuration name="CalculatorTests" configurationId="JUnit" />
     </history-entry>
@@ -443,9 +446,24 @@
     <history-entry file="CalculatorTests_addingTwoNumbersShouldReturnExpectedResult - 2018.11.30 at 18h 39m 27s.xml">
       <configuration name="CalculatorTests.addingTwoNumbersShouldReturnExpectedResult" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BankAccountTests - 2018.11.30 at 20h 59m 18s.xml">
+      <configuration name="BankAccountTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankAccountTests_shouldThrowExceptionWhenUserTriesToWithdrawMoreMoneyThanHeHas - 2018.11.30 at 21h 06m 09s.xml">
+      <configuration name="BankAccountTests.shouldThrowExceptionWhenUserTriesToWithdrawMoreMoneyThanHeHas" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankAccountTests_shouldThrowExceptionWhenUserTriesToWithdrawMoreMoneyThanHeHas - 2018.11.30 at 21h 06m 22s.xml">
+      <configuration name="BankAccountTests.shouldThrowExceptionWhenUserTriesToWithdrawMoreMoneyThanHeHas" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankAccountTests - 2018.11.30 at 21h 06m 27s.xml">
+      <configuration name="BankAccountTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankAccountTests - 2018.11.30 at 21h 07m 01s.xml">
+      <configuration name="BankAccountTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7612000" />
+    <option name="totallyTimeSpent" value="8089000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -458,10 +476,10 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38482758" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38482758" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -891,16 +909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pl/sda/entry/CalculatorTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/entry/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -919,10 +927,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/sda/entry/CalculatorTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/medium/BankAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        <state relative-caret-position="306">
+          <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="110" />
           <folding>
             <element signature="e#109#110#0" expanded="true" />
             <element signature="e#136#137#0" expanded="true" />
@@ -936,14 +954,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pl/sda/medium/BankAccountTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        <state relative-caret-position="143">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#160#161#0" expanded="true" />
             <element signature="e#206#207#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
           </folding>
         </state>
       </provider>
