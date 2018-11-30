@@ -1,6 +1,7 @@
-package pl.sda;
+package pl.sda.entry;
 
 import org.junit.Test;
+import pl.sda.entry.Calculator;
 
 import static org.junit.Assert.assertEquals;
 
