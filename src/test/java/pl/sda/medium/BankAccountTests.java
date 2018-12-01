@@ -15,8 +15,12 @@ public class BankAccountTests {
         bankAccount = new BankAccount(100);
     }
 
+    /**
+     * Rozwiazanie zadania 12
+     * Test negatywnego przypadku uzycia oraz przypadu krancowego (0)
+     */
     @Test(expected = IllegalArgumentException.class)
-    @Parameters({ "-100.0", "0.0"})
+    @Parameters({ "-100.0", "0.0" })
     public void shouldThrowExceptionWhenUserTriesToDepositNegativeAmountOfMoney(double invalidAmountToDeposit) {
         bankAccount.deposit(invalidAmountToDeposit);
     }
