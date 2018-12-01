@@ -7,7 +7,13 @@ public class BankAccount {
         balance = initialBalance;
     }
 
+    /**
+     * Uzytkownik nie powinien moc wplacic ujemnej ilosci pieniedzy
+     */
     public void deposit(double amountToDeposit) {
+        if(amountToDeposit <= 0) {
+            throw new IllegalArgumentException(String.format("Cannot deposit %f amount of money", amountToDeposit));
+        }
         balance += amountToDeposit;
     }
 
@@ -18,7 +24,7 @@ public class BankAccount {
         if(balance - amountToWithdraw < 0) {
             String errorMessage = String.format("You don't have enough cash to withdraw %f. Current balance %f",
                                                 amountToWithdraw, balance);
-            throw new IllegalStateException(errorMessage);
+            throw new IllegalArgumentException(errorMessage);
         }
         balance -= amountToWithdraw;
     }
