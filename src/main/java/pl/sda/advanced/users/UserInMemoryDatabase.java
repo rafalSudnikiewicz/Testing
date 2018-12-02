@@ -1,5 +1,7 @@
 package pl.sda.advanced.users;
 
+import sun.plugin.dom.exception.InvalidStateException;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -10,19 +12,24 @@ public class UserInMemoryDatabase {
 
     public UserInMemoryDatabase() {
         users = new ArrayList<>();
-    }
-
-    public void add(User user) {
+        User user = new User("ASD", "sadasdas", "sad@asfaf.pl",
+                20, Sex.MALE);
         users.add(user);
     }
 
-    public Optional<User> getById(UUID id) {
+    public void add(User user) {
+        if(user != null) {
+            users.add(user);
+        }
+    }
+
+    public User getById(UUID id) {
         for(User user : users) {
             if(user.getId().equals(id)) {
-                return Optional.of(user);
+                return user;
             }
         }
-        return Optional.empty();
+        throw new InvalidStateException("User not found");
     }
 
     public Optional<User> getByEmail(String email) {

@@ -109,6 +109,14 @@ public class CalculatorTests {
         // Then
         assertFalse(isEven);
     }
+
+    @Test
+    public void isOddShouldReturnTrueIfTheNumberIsOdd() {
+        // When
+        boolean isOdd = calculator.isOdd(3);
+        // Then
+        assertTrue(isOdd);
+    }
 }
 
 
