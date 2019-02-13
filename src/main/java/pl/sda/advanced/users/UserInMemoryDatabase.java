@@ -12,20 +12,24 @@ public class UserInMemoryDatabase {
 
     public UserInMemoryDatabase() {
         users = new ArrayList<>();
-        User user = new User("ASD", "sadasdas", "sad@asfaf.pl",
-                20, Sex.MALE);
-        users.add(user);
+//        User user = new User("ASD", "sadasdas", "sad@asfaf.pl",
+//                20, Sex.MALE);
+//        users.add(user);
     }
 
     public void add(User user) {
-        if(user != null) {
+//        if (user != null && !getByEmail(user.getEmail()).equals(Optional.empty())) {
+//            throw new InvalidStateException("User already exists");
+//        }
+
+        if (user != null) {
             users.add(user);
         }
     }
 
     public User getById(UUID id) {
-        for(User user : users) {
-            if(user.getId().equals(id)) {
+        for (User user : users) {
+            if (user.getId().equals(id)) {
                 return user;
             }
         }
